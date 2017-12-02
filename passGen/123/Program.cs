@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace pGen
+namespace passGen
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace pGen
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fm_Main());
+            Application.Run(new Form1());
         }
     }
 }

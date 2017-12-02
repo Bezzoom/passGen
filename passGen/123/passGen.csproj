@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E246FCE4-0838-4DAA-B3BB-D7F07590D673}</ProjectGuid>
+    <ProjectGuid>{E7246AB8-D03A-4756-A938-1BEC1B444876}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>pGen</RootNamespace>
-    <AssemblyName>pGen</AssemblyName>
+    <RootNamespace>passGen</RootNamespace>
+    <AssemblyName>passGen</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,9 +53,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
