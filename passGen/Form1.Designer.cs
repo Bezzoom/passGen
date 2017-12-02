@@ -41,6 +41,8 @@
             // cb_Capitalize
             // 
             this.cb_Capitalize.AutoSize = true;
+            this.cb_Capitalize.Checked = true;
+            this.cb_Capitalize.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Capitalize.Location = new System.Drawing.Point(12, 12);
             this.cb_Capitalize.Name = "cb_Capitalize";
             this.cb_Capitalize.Size = new System.Drawing.Size(49, 17);
@@ -51,6 +53,8 @@
             // cb_Small
             // 
             this.cb_Small.AutoSize = true;
+            this.cb_Small.Checked = true;
+            this.cb_Small.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Small.Location = new System.Drawing.Point(12, 35);
             this.cb_Small.Name = "cb_Small";
             this.cb_Small.Size = new System.Drawing.Size(46, 17);
@@ -61,6 +65,8 @@
             // cb_Digits
             // 
             this.cb_Digits.AutoSize = true;
+            this.cb_Digits.Checked = true;
+            this.cb_Digits.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Digits.Location = new System.Drawing.Point(12, 58);
             this.cb_Digits.Name = "cb_Digits";
             this.cb_Digits.Size = new System.Drawing.Size(47, 17);
@@ -102,7 +108,7 @@
             this.numericUpDown1.Size = new System.Drawing.Size(46, 20);
             this.numericUpDown1.TabIndex = 6;
             this.numericUpDown1.Value = new decimal(new int[] {
-            6,
+            8,
             0,
             0,
             0});
