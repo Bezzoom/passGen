@@ -134,8 +134,10 @@
             this.Controls.Add(this.cb_Digits);
             this.Controls.Add(this.cb_Small);
             this.Controls.Add(this.cb_Capitalize);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fm_Main";
-            this.Text = "pGen 0.1";
+            this.Text = "passGen 0.1";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
