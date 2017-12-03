@@ -87,7 +87,7 @@
             // 
             // tb_Result
             // 
-            this.tb_Result.Location = new System.Drawing.Point(81, 33);
+            this.tb_Result.Location = new System.Drawing.Point(81, 32);
             this.tb_Result.Name = "tb_Result";
             this.tb_Result.Size = new System.Drawing.Size(135, 20);
             this.tb_Result.TabIndex = 5;
