@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fm_Main));
             this.cb_Capitalize = new System.Windows.Forms.CheckBox();
             this.cb_Small = new System.Windows.Forms.CheckBox();
             this.cb_Digits = new System.Windows.Forms.CheckBox();
@@ -134,6 +135,7 @@
             this.Controls.Add(this.cb_Digits);
             this.Controls.Add(this.cb_Small);
             this.Controls.Add(this.cb_Capitalize);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "fm_Main";
