@@ -5,6 +5,18 @@ namespace passGen {
     public partial class fm_Main : Form {
         public fm_Main() {
             InitializeComponent();
+            notifyIcon1.Visible = false;
+
+            this.Resize += new System.EventHandler(this.fm_Main_R);
+        }
+
+        private void fm_Main_R (object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                this.ShowInTaskbar = false;
+                notifyIcon1.Visible = true;
+            }
         }
 
         private void btn_Generate_Click(object sender, EventArgs e) {
@@ -58,6 +70,13 @@ namespace passGen {
 
             Form res = new fm_Result(passwords);
             res.Show();
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            notifyIcon1.Visible = false;
+            this.ShowInTaskbar = true;
+            this.WindowState = FormWindowState.Normal;
         }
     }
 }

@@ -12,12 +12,22 @@ namespace passGen
     {
         public fm_Result(Array res)
         {
+//          Initialize form
             InitializeComponent();
 
+//          Fill ListBox with new passwords
             foreach (string result in res)
             {
                 lb_results.Items.Add(result);
             }
+
+//          Add some events
+            lb_results.SelectedValueChanged += new System.EventHandler(lb_results_SelectIndexChanged);
+        }
+
+        private void lb_results_SelectIndexChanged(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
