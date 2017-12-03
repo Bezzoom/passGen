@@ -1,4 +1,4 @@
-﻿namespace pGen
+﻿namespace passGen
 {
     partial class fm_Main
     {
