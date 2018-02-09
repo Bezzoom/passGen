@@ -33,6 +33,8 @@ namespace passGen {
             {
                 string pass = "";
 
+                if (cb_symbols.Checked) dic += "!@#$%^&*()";
+
                 if (cb_Digits.Checked) dic += "0123456789";
 
                 if (cb_Capitalize.Checked)

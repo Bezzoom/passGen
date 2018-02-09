@@ -92,6 +92,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy C:\Users\Lion\source\repos\passGen\passGen\bin\Release\passGen.exe C:\Users\Lion\source\repos\passGen\passGen\passGen\passGen.exe</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

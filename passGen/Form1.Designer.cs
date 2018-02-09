@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.num_pass_count = new System.Windows.Forms.NumericUpDown();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.cb_symbols = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_pass_count)).BeginInit();
             this.SuspendLayout();
@@ -81,7 +82,7 @@
             // 
             // btn_Generate
             // 
-            this.btn_Generate.Location = new System.Drawing.Point(216, 8);
+            this.btn_Generate.Location = new System.Drawing.Point(228, 8);
             this.btn_Generate.Name = "btn_Generate";
             this.btn_Generate.Size = new System.Drawing.Size(135, 52);
             this.btn_Generate.TabIndex = 4;
@@ -123,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 42);
+            this.label2.Location = new System.Drawing.Point(131, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 8;
@@ -131,7 +132,7 @@
             // 
             // num_pass_count
             // 
-            this.num_pass_count.Location = new System.Drawing.Point(157, 40);
+            this.num_pass_count.Location = new System.Drawing.Point(172, 40);
             this.num_pass_count.Maximum = new decimal(new int[] {
             32,
             0,
@@ -158,11 +159,24 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
+            // cb_symbols
+            // 
+            this.cb_symbols.AutoSize = true;
+            this.cb_symbols.Checked = true;
+            this.cb_symbols.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_symbols.Location = new System.Drawing.Point(172, 12);
+            this.cb_symbols.Name = "cb_symbols";
+            this.cb_symbols.Size = new System.Drawing.Size(50, 17);
+            this.cb_symbols.TabIndex = 10;
+            this.cb_symbols.Text = "@#$";
+            this.cb_symbols.UseVisualStyleBackColor = true;
+            // 
             // fm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 68);
+            this.ClientSize = new System.Drawing.Size(370, 68);
+            this.Controls.Add(this.cb_symbols);
             this.Controls.Add(this.num_pass_count);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -185,14 +199,23 @@
 
         #endregion
 
+
+        // Checkboxes
         private System.Windows.Forms.CheckBox cb_Capitalize;
         private System.Windows.Forms.CheckBox cb_Small;
         private System.Windows.Forms.CheckBox cb_Digits;
+        private System.Windows.Forms.CheckBox cb_symbols;
+
+        // Buttons
         private System.Windows.Forms.Button btn_Generate;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+
+        // Labels
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+
+        // Others
         private System.Windows.Forms.NumericUpDown num_pass_count;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
