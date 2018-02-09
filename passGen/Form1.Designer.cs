@@ -39,9 +39,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.num_pass_count = new System.Windows.Forms.NumericUpDown();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.cm_Tray = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mi_FastGen = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_Show = new System.Windows.Forms.ToolStripMenuItem();
+            this.mi_About = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mi_Close = new System.Windows.Forms.ToolStripMenuItem();
             this.cb_symbols = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_pass_count)).BeginInit();
+            this.cm_Tray.SuspendLayout();
             this.SuspendLayout();
             // 
             // cb_Capitalize
@@ -111,6 +118,7 @@
             0,
             0,
             0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label1
             // 
@@ -154,10 +162,55 @@
             // 
             // notifyIcon1
             // 
+            this.notifyIcon1.ContextMenuStrip = this.cm_Tray;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "passGen";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
+            // cm_Tray
+            // 
+            this.cm_Tray.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mi_FastGen,
+            this.mi_Show,
+            this.mi_About,
+            this.toolStripSeparator1,
+            this.mi_Close});
+            this.cm_Tray.Name = "cm_Tray";
+            this.cm_Tray.Size = new System.Drawing.Size(168, 98);
+            // 
+            // mi_FastGen
+            // 
+            this.mi_FastGen.Name = "mi_FastGen";
+            this.mi_FastGen.Size = new System.Drawing.Size(167, 22);
+            this.mi_FastGen.Text = "Быстрый пароль";
+            this.mi_FastGen.ToolTipText = "Генерировать пароль и скопироватье его в буфер обмена";
+            this.mi_FastGen.Click += new System.EventHandler(this.mi_FastGen_Click);
+            // 
+            // mi_Show
+            // 
+            this.mi_Show.Name = "mi_Show";
+            this.mi_Show.Size = new System.Drawing.Size(167, 22);
+            this.mi_Show.Text = "Развернуть";
+            this.mi_Show.Click += new System.EventHandler(this.mi_Show_Click);
+            // 
+            // mi_About
+            // 
+            this.mi_About.Name = "mi_About";
+            this.mi_About.Size = new System.Drawing.Size(167, 22);
+            this.mi_About.Text = "О Программе";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(164, 6);
+            // 
+            // mi_Close
+            // 
+            this.mi_Close.Name = "mi_Close";
+            this.mi_Close.Size = new System.Drawing.Size(167, 22);
+            this.mi_Close.Text = "Выход";
+            this.mi_Close.Click += new System.EventHandler(this.выToolStripMenuItem_Click);
             // 
             // cb_symbols
             // 
@@ -192,6 +245,7 @@
             this.Text = "passGen 0.1";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_pass_count)).EndInit();
+            this.cm_Tray.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,10 +255,10 @@
 
 
         // Checkboxes
-        private System.Windows.Forms.CheckBox cb_Capitalize;
-        private System.Windows.Forms.CheckBox cb_Small;
-        private System.Windows.Forms.CheckBox cb_Digits;
-        private System.Windows.Forms.CheckBox cb_symbols;
+        public System.Windows.Forms.CheckBox cb_Capitalize;
+        public System.Windows.Forms.CheckBox cb_Small;
+        public System.Windows.Forms.CheckBox cb_Digits;
+        public System.Windows.Forms.CheckBox cb_symbols;
 
         // Buttons
         private System.Windows.Forms.Button btn_Generate;
@@ -217,6 +271,12 @@
         private System.Windows.Forms.NumericUpDown num_pass_count;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip cm_Tray;
+        private System.Windows.Forms.ToolStripMenuItem mi_Close;
+        private System.Windows.Forms.ToolStripMenuItem mi_About;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem mi_FastGen;
+        private System.Windows.Forms.ToolStripMenuItem mi_Show;
     }
 }
 

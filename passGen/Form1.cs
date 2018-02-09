@@ -80,5 +80,31 @@ namespace passGen {
             this.ShowInTaskbar = true;
             this.WindowState = FormWindowState.Normal;
         }
+
+        private void выToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void mi_Show_Click(object sender, EventArgs e)
+        {
+            notifyIcon1.Visible = false;
+            this.ShowInTaskbar = true;
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void mi_FastGen_Click(object sender, EventArgs e)
+        {
+
+            Passwords pass = new Passwords(cb_Capitalize.Checked, cb_symbols.Checked, cb_Digits.Checked, cb_Small.Checked, numericUpDown1.Value);
+
+            string result = pass.FastGenerate();
+            Clipboard.SetText(result);
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
